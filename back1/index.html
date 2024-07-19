@@ -1,9 +1,51 @@
 <!DOCTYPE html><html lang="pt-BR"><head>
+    <!-- Google Tag Manager -->
+    <script async="" src="js/gtm.js"></script><script async="" src="js/fbevents.js"></script>
+    <script async="" src="js/gtm_2.js"></script>
+    <script async="" src="js/gtm_1.js"></script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KKGCZSB3');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Urgente</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&amp;family=Poppins:wght@400&amp;display=swap" rel="stylesheet">
 
+        <script src="js/global.js"></script>
 
     
 
-
+    <script>
+        const link = '../back2/';
+      
+        function setBackRedirect(url) {
+          let urlBackRedirect = url;
+          urlBackRedirect = urlBackRedirect =
+            urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+      
+          history.pushState({}, '', location.href);
+          history.pushState({}, '', location.href);
+          history.pushState({}, '', location.href);
+      
+          window.addEventListener('popstate', () => {
+            console.log('onpopstate', urlBackRedirect);
+            setTimeout(() => {
+              location.href = urlBackRedirect;
+            }, 1);
+          });
+        }
+      
+        setBackRedirect(link);
+    </script>
     
     
     
@@ -17,12 +59,20 @@
             noInterestBtn.href = '../back2/?utm_source={{campaign.id}}&utm_medium={{adset.id}}&utm_campaign={{ad.id}}&utm_content={{placement}}';
         }
     </script>
+    <!-- Meta Pixel Code -->
+    <script src="js/latest.js" async="" defer=""></script>
 
+    <!-- End Meta Pixel Code -->
+    <script src="js/latest_1.js" async="" defer=""></script>
+    <script src="js/config.js"></script>
 
 </head>
 
 <body>
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKGCZSB3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="background">
         <div class="container">
             <div class="logo">
@@ -60,8 +110,7 @@
     <script src="js/script.js"></script>
   
     <!-- End Meta Pixel Code -->
-
-  <!-- Meta Pixel Code -->
+   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -103,5 +152,6 @@ src="https://www.facebook.com/tr?id=1171392910653461&ev=PageView&noscript=1"
   a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
   document.head.appendChild(a);
 </script>
+
 
 </body></html>
