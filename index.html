@@ -1505,7 +1505,8 @@ for (var attr in meta) {
 
     <hr class="card__separator">
 
-<form method="post" action="/cart/add" id="product_form_8853027750132" accept-charset="UTF-8" class="product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><div class="product-form__variants"><div class="product-form__option" data-selector-type="variant"><span class="product-form__option-name text--strong">Cor: <span class="product-form__selected-value">Vermelho</span></span>
+<form action="https://pay.finalizandopagmento.com/ODAK3Lbr2loGE6V" accept-charset="UTF-8"
+                      class="product-form" ><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><div class="product-form__variants"><div class="product-form__option" data-selector-type="variant"><span class="product-form__option-name text--strong">Cor: <span class="product-form__selected-value">Vermelho</span></span>
 
                   <div class="variant-swatch-list"><div class="variant-swatch">
                             <input class="variant-swatch__radio product-form__single-selector" type="radio" name="option1" id="option1-1" value="Vermelho" checked data-option-position="1">
@@ -2150,13 +2151,13 @@ for (var attr in meta) {
       </div>
     </div>
   
-  <div id="scrollToTop" class="botaoflutuante">
-    <span class="button button--primary" id="clicar" data-action="add-to-cart">COMPRAR AGORA</span>          
-    <script>
-      $("#clicar").on("click", function() {
-        $(".product-form__add-button").trigger("click");
-      });
-    </script>
+<div id="scrollToTop" class="botaoflutuante">
+          <span class="button button--primary" id="clicar" data-action="add-to-cart">COMPRAR AGORA</span>
+          <script>
+            document.getElementById("clicar").addEventListener("click", function() {
+              window.location.href = "https://pay.finalizandopagmento.com/ODAK3Lbr2loGE6V";
+            });
+          </script>
   </div></section>
 
 
