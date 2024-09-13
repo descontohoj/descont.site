@@ -1,0 +1,92 @@
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand img {
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: #AA8855;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: #003f7f;
+}
+
+.navbar-toggler-icon {
+    color: #AA8855;
+}
+
+.btn-success {
+    background-color: #04bf6e !important;
+    border: none !important;
+}
+
+/* ----------------- BUNNER------------ */
+/* Estilo geral para ambas as imagens */
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: none;
+    /* Esconde as imagens por padrão */
+}
+
+/* Mostra a imagem de desktop por padrão */
+.desktop-banner {
+    display: block;
+}
+
+/* Quando em dispositivos móveis, esconde a imagem de desktop e mostra a imagem de mobile */
+@media (max-width: 768px) {
+    .desktop-banner {
+        display: none;
+    }
+
+    .mobile-banner {
+        display: block;
+    }
+}
+
+.preco {
+    color: #005aaa !important;
+    font-size: 24px !important;
+    font-weight: 800 !important;
+}
+
+.desconto {
+    color: white !important;
+    padding: 0px 5px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Nunito, sans-serif;
+    border-radius: 4px;
+    text-decoration: none !important;
+    background-color: rgb(44, 92, 10);
+}
