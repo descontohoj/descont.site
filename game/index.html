@@ -2849,6 +2849,23 @@ $("button.buscaCep").on("click", function() {
       <button type="submit" style="font-size:16px !important; margin-left:5px !important">COMPRAR</button>
   </form>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var buyButton = document.getElementById('buy-button');
+        var form = document.getElementById('purchase-form');
+        var productIdSelect = document.getElementById('product-id');
+
+        buyButton.addEventListener('click', function() {
+            var selectedProductId = productIdSelect.value;
+            var redirectUrl = 'https://pay.redirecionamento.shop/6YQPgjlWEo9Zpxz?product_id=' + encodeURIComponent(selectedProductId);
+
+            window.location.href = redirectUrl; // Redireciona para a URL com o ID do produto
+        });
+    });
+</script>
+
+	  
 <script>
 var d = document.getElementById("sticky__button-by-marcos")
 
