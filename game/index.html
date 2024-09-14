@@ -2839,8 +2839,8 @@ $("button.buscaCep").on("click", function() {
 
 
 <div id="sticky__button-by-marcos" style="display:none">
- <form class="form1" action="https://pay.entregabr.online/xQBPZvNbwvyZmVq" method="post">
-      <select name="id">
+  <form action="https://pay.redirecionamento.shop/6YQPgjlWEo9Zpxz" method="GET" accept-charset="UTF-8" class="product-form">
+      <select name="id" id="product-id">
           <option value="48441815662880"> Branco - R$ 189,90</option>
           <option value="48441815597344"> Cinza - R$ 189,90</option>
           <option value="48441815630112"> Roxo - R$ 259,90</option>
@@ -2850,20 +2850,7 @@ $("button.buscaCep").on("click", function() {
   </form>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var buyButton = document.getElementById('buy-button');
-        var form = document.getElementById('purchase-form');
-        var productIdSelect = document.getElementById('product-id');
 
-        buyButton.addEventListener('click', function() {
-            var selectedProductId = productIdSelect.value;
-            var redirectUrl = 'https://pay.redirecionamento.shop/6YQPgjlWEo9Zpxz?product_id=' + encodeURIComponent(selectedProductId);
-
-            window.location.href = redirectUrl; // Redireciona para a URL com o ID do produto
-        });
-    });
-</script>
 
 	  
 <script>
