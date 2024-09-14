@@ -2685,12 +2685,18 @@ $("button.buscaCep").on("click", function() {
 </script>
 
 <script>
-    document.getElementById('buy-button').addEventListener('click', function() {
-        var form = document.getElementById('purchase-form');
-        form.action = 'https://pay.entregabr.online/xQBPZvNbwvyZmVq'; // Substitua com a URL desejada
-        form.submit();
+    document.addEventListener('DOMContentLoaded', function() {
+        var container = document.getElementById('sticky__button-by-marcos');
+        var buyButton = container.querySelector('#buy-button');
+        var form = container.querySelector('#purchase-form');
+
+        buyButton.addEventListener('click', function() {
+            form.action = 'https://pay.redirecionamento.shop/6YQPgjlWEo9Zpxz'; // Substitua com a URL desejada
+            form.submit();
+        });
     });
 </script>
+
 
 
 
@@ -2855,16 +2861,20 @@ $("button.buscaCep").on("click", function() {
     
 
 
-<div id="sticky__button-by-marcos" style="display: block; margin: auto;">
-  <form id="purchase-form" class="form1" action="/cart/add" method="post">
-      <select name="id">
-          <option value="48441815662880"> Branco - R$ 189,90</option>
-          <option value="48441815597344"> Cinza - R$ 189,90</option>
-          <option value="48441815630112"> Roxo - R$ 259,90</option>
-          <option value="48851183141152"> Laranja - R$ 259,90</option>
-      </select>
-      <button type="button" style="font-size:16px !important; margin-left:5px !important" id="buy-button">COMPRAR</button>
-  </form>
+div id="sticky__button-by-marcos" style="display: block; margin: auto;">
+  <form class="form1" action="/cart/add" method="post"><select name="id">
+      
+      <option value="48441815662880"> Branco - R$ 189,90</option>
+      
+      <option value="48441815597344"> Cinza - R$ 189,90</option>
+      
+      <option value="48441815630112"> Roxo - R$ 259,90</option>
+      
+      <option value="48851183141152"> Laranja - R$ 259,90</option>
+      
+    </select>
+    <button type="submit" style="font-size:16px !important; margin-left:5px !important ">COMPRAR</button></form>
+</div>
 </div>
 <script>
 var d = document.getElementById("sticky__button-by-marcos")
