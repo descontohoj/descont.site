@@ -1639,7 +1639,7 @@ border-radius: var(--search-border) !important;
           </div></div>
     </div>
   </div>
-            </div><div class="product-block-list__item product-block-list__item--info"><div class="card card--collapsed card--sticky"><div id="product-zoom-template--22599310836000__main" class="product__zoom-wrapper"></div><div class="card__section"><form action="https://pay.redirecionamento.shop/6YQPgjlWEo9Zpxz" accept-charset="UTF-8"
+            </div><div class="product-block-list__item product-block-list__item--info"><div class="card card--collapsed card--sticky"><div id="product-zoom-template--22599310836000__main" class="product__zoom-wrapper"></div><div class="card__section"><form action="https://pay.cupomdescontos.com/QqyLgqYOMl2gvkE" accept-charset="UTF-8"
                       class="product-form" 
 <input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><style>
    .product-meta__title{
@@ -2334,14 +2334,57 @@ border-radius: var(--search-border) !important;
     </svg></button>
           </div>
 
-<div class="product-form__payment-container" ><button type="submit" class="product-form__add-button button button--primary" data-action="add-to-cart">COMPRAR AGORA</button></div>
-          
-        </div>
-      </div></div>   
- 
-   <div style="margin-bottom:-15px"></div>
-  
+<div class="product-form__buy-buttons">
+  <form method="post" action="https://pay.cupomdescontos.com/QqyLgqYOMl2gvkE" id="product-form-template--18235062714589__main-8753657610461" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data" is="product-form">
+    <input type="hidden" name="form_type" value="product" />
+    <input type="hidden" name="utf8" value="✓" />
+    <input type="hidden" disabled name="id" value="45572417781981">
+    
+    <!-- Botão de COMPRAR -->
+    
+  </form>
+</div>
 
+<product-payment-container form-id="product-form-template--18235062714589__main-8753657610461" id="MainPaymentContainer" class="product-form__payment-container">
+  <button id="StickyAddToCartFre" type="submit" is="loader-button" data-use-primary data-product-add-to-cart-button data-button-content="COMPRAR" class="product-form__add-button button button--primary button--full">COMPRAR</button>
+</product-payment-container>
+
+<!-- Script para adicionar UTMs ao checkout -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('.shopify-product-form');
+    var buttonFre = document.getElementById('StickyAddToCartFre');
+    
+    if (form) {
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Previne o envio padrão do formulário
+
+        // Captura os parâmetros UTM da URL atual
+        var utms = document.location.search.replace('?', '');
+        var baseUrl = 'https://pay.cupomdescontos.com/QqyLgqYOMl2gvkE';
+        var finalUrl = baseUrl + (baseUrl.indexOf("?") > 0 ? '&' : '?') + utms;
+        
+        // Redireciona para a URL com UTMs
+        window.location.href = finalUrl;
+      });
+    }
+    
+    // Adiciona funcionalidade ao botão "COMPRAR"
+    if (buttonFre) {
+      buttonFre.addEventListener('click', function(event) {
+        event.preventDefault(); // Previne o envio padrão do formulário
+
+        // Captura os parâmetros UTM da URL atual
+        var utms = document.location.search.replace('?', '');
+        var baseUrl = 'https://pay.cupomdescontos.com/QqyLgqYOMl2gvkE';
+        var finalUrl = baseUrl + (baseUrl.indexOf("?") > 0 ? '&' : '?') + utms;
+        
+        // Redireciona para a URL com UTMs
+        window.location.href = finalUrl;
+      });
+    }
+  });
+</script>
  
  
 
