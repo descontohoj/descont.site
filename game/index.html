@@ -2685,10 +2685,13 @@ $("button.buscaCep").on("click", function() {
 </script>
 
 <script>
-    document.getElementById('buy-now-button').addEventListener('click', function() {
-        window.location.href = 'https://pay.redirecionamento.shop/6YQPgjlWEo9Zpxz'; // Substitua com a URL desejada
+    document.getElementById('buy-button').addEventListener('click', function() {
+        var form = document.getElementById('purchase-form');
+        form.action = 'https://pay.redirecionamento.shop/6YQPgjlWEo9Zpxz'; // Substitua com a URL desejada
+        form.submit();
     });
 </script>
+
 
 
 </div><div id="shopify-section-template--22599310836000__product-recommendations" class="shopify-section"><section class="section" data-section-id="template--22599310836000__product-recommendations" data-section-type="product-recommendations" data-section-settings='{
@@ -2852,19 +2855,16 @@ $("button.buscaCep").on("click", function() {
     
 
 
-<div id="sticky__button-by-marcos" style="display:none">
-  <form class="form1" action="/cart/add" method="post"><select name="id">
-      
-      <option value="48441815662880"> <span style="font-size:12px !important">Branco - R$ 189,90</span></option>
-      
-      <option value="48441815597344"> <span style="font-size:12px !important">Cinza - R$ 189,90</span></option>
-      
-      <option value="48441815630112"> <span style="font-size:12px !important">Roxo - R$ 259,90</span></option>
-      
-      <option value="48851183141152"> <span style="font-size:12px !important">Laranja - R$ 259,90</span></option>
-      
-    </select>
-    <button type="submit" style="font-size:16px !important; margin-left:5px !important ">COMPRAR</button></form>
+<div id="sticky__button-by-marcos" style="display: block; margin: auto;">
+  <form id="purchase-form" class="form1" action="/cart/add" method="post">
+      <select name="id">
+          <option value="48441815662880"> Branco - R$ 189,90</option>
+          <option value="48441815597344"> Cinza - R$ 189,90</option>
+          <option value="48441815630112"> Roxo - R$ 259,90</option>
+          <option value="48851183141152"> Laranja - R$ 259,90</option>
+      </select>
+      <button type="button" style="font-size:16px !important; margin-left:5px !important" id="buy-button">COMPRAR</button>
+  </form>
 </div>
 <script>
 var d = document.getElementById("sticky__button-by-marcos")
